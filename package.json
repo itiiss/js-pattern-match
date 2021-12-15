@@ -1,11 +1,11 @@
 {
   "name": "babel-plugin-proposal-pattern-match",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "",
-  "main": "./dist/index.js",
+  "main": "./bundle/index.js",
   "scripts": {
     "build": "rollup -c",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --verbose --watch"
   },
   "dependencies": {
     "@babel/core": "^7.13.14",
@@ -16,5 +16,10 @@
     "@babel/types": "^7.13.14"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/preset-env": "^7.16.5",
+    "babel-plugin-tester": "^10.1.0",
+    "jest": "^27.4.4"
+  }
 }

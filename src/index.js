@@ -4,8 +4,8 @@ import resolveCallExpression from "./visitor/resolve-expression";
 export default (babel) => {
   return {
     visitor: {
-      ImportDeclaration(path, state) {
-        markImportDeclaration(babel, path, state);
+      ImportDeclaration(path) {
+        markImportDeclaration(path);
       },
       CallExpression(path, state) {
         resolveCallExpression(babel, path, state);
